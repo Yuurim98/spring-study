@@ -19,6 +19,7 @@ public class ProjectConfig {
     public Person person() {
         Person p = new Person();
         p.setName("홍길동");
+        p.setParrot(parrot()); // parrot() 호출하여 참조 설정
         return p;
     }
 }
