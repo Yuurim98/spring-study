@@ -7,12 +7,7 @@ import org.springframework.stereotype.Component;
 public class Person {
 
     private String name = "홍길동";
-    private final Parrot parrot;
-
-    @Autowired // 생성자 하나면 생략 가능
-    public Person(Parrot parrot) {
-        this.parrot = parrot;
-    }
+    private Parrot parrot;
 
     public String getName() {
         return name;
@@ -26,4 +21,8 @@ public class Person {
         return parrot;
     }
 
+    @Autowired
+    public void setParrot(Parrot parrot) {
+        this.parrot = parrot;
+    }
 }
