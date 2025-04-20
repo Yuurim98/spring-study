@@ -16,10 +16,10 @@ public class ProjectConfig {
     }
 
     @Bean
-    public Person person() {
+    public Person person(Parrot parrot) {
         Person p = new Person();
         p.setName("홍길동");
-        p.setParrot(parrot()); // parrot() 호출하여 참조 설정
+        p.setParrot(parrot); // DI
         return p;
     }
 }
