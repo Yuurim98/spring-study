@@ -1,4 +1,4 @@
-package org.example;
+package org.example.main;
 
 import org.example.config.ProjectConfig;
 import org.example.services.CommentService;
