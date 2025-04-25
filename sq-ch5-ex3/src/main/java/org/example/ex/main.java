@@ -11,8 +11,8 @@ public class main {
 
         service.sendComment(new Comment());
         service.sendComment(new Comment());
-//        org.example.ex.CommentProcessor@41d477ed
-//        org.example.ex.CommentProcessor@3590fc5b
+//        org.example.ex.CommentProcessor@65fb9ffc
+//        org.example.ex.CommentProcessor@65fb9ffc
     }
 }
 

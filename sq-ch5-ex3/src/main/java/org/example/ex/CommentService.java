@@ -8,10 +8,9 @@ import org.springframework.stereotype.Service;
 public class CommentService {
 
     @Autowired
-    private ApplicationContext context;
+    private CommentProcessor processor;
 
     public void sendComment(Comment comment) {
-        CommentProcessor processor = context.getBean(CommentProcessor.class);
         processor.setComment(comment);
         processor.processComment(comment);
         processor.validateComment(comment);
