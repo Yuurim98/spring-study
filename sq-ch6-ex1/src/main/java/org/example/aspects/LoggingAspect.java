@@ -18,6 +18,7 @@ public class LoggingAspect {
         Object returnByMethod = joinPoint.proceed(); // 메서드 호출
         logger.info("메서드 반환 " + returnByMethod);
 
+        returnByMethod += " 반환 값 수정";
         return returnByMethod;
     }
 
