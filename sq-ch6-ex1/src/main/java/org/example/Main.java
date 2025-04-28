@@ -18,7 +18,8 @@ public class Main {
        comment.setText("댓글");
        comment.setAuthor("홍길동");
 
-       String value = service.publishComment(comment);
-       logger.info(value);
+        service.publishComment(comment);
+        service.deleteComment(comment);
+        service.editComment(comment);
     }
 }
